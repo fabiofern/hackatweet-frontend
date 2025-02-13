@@ -1,12 +1,30 @@
 import styles from '../styles/Home.module.css';
 
 function HomeOfTweets() {
-    return (
-      <div>
-        <h1>Bienvenue sur la page des Tweets !</h1>
-        <p>Ici, tu verras tous les tweets des utilisateurs.</p>
+  return (
+    <div className={styles.divtotale}>
+      <div className={styles.divgauche}>
+        <img src="/favicon.ico" alt="icon logo" />
       </div>
-    );
-  }
-  
-  export default HomeOfTweets;
+      <div className={styles.divcentral}>
+        <div>
+          <h1>HOME</h1>
+          <div className={styles.inputButton}>
+            <input placeholder={"FAIT PETER TON TWEET ICI !!!"} className={styles.inputTweet}></input>
+            <button className={styles.buttonTweet}>Tweet</button>
+          </div>
+        </div>
+        <div className={styles.tweetContainer}>
+        </div>
+      </div>
+      <div className={styles.trend}>
+        <h1> Trends</h1>
+        <div className={styles.hashtagContainer}></div>
+      </div>
+
+
+    </div >
+  );
+}
+
+export default HomeOfTweets;

@@ -1,0 +1,60 @@
+.divtotale{
+    display:flex;
+}
+.divgauche{
+width :25%;
+border-right:rgb(60, 60, 60) 2px solid;
+height:100vh;
+background-color: black;
+
+}
+
+.divcentral{
+    width:45%;
+    /* border:black 2px solid; */
+    height:100vh;
+    background-color: black;
+    color:white
+}
+
+.buttonTweet{
+    width:200px;
+    height :40px;
+    border-radius: 20px;
+
+}
+
+.inputButton{
+    display:flex;
+    /* border:black 2px solid; */
+    flex-direction: column;
+    height:100px;
+    align-items: flex-end;
+    justify-content: space-between;
+} 
+
+.inputTweet{
+    width:100%;
+    height :40px;
+    color:white;
+    background-color: black;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+
+    border-bottom-color:rgb(60, 60, 60) 2px solid;;
+}
+
+.hashtagContainer{
+    height:100vh;
+    background-color: black;
+
+}
+
+.trend{
+    color:white;
+    background-color: black;
+    width:30%;
+    border-left:rgb(60, 60, 60) 2px solid;
+}
+
