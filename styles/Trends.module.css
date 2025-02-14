@@ -1,0 +1,8 @@
+.divtotale {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(203, 84, 51, 0.805);
+}

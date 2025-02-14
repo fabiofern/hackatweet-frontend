@@ -1,27 +1,84 @@
+/* Effet de zoom infini */
+@keyframes zoomEffect {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5); /* Zoom */
+    }
+    100% {
+      transform: scale(1); /* Retour à la taille normale */
+    }
+  }
+
 .divtotale{
     display:flex;
 }
+
+/* Div gauche */
 .divgauche{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 width :25%;
 border-right:rgb(60, 60, 60) 2px solid;
 height:100vh;
-background-color: black;
-
+background-color: rgb(33, 33, 33);
+padding: 100px;
 }
+
+/* logo */
+.logoDivgauche {
+    animation: zoomEffect 3s infinite ease-in-out; 
+    border-radius: 50%;
+    width: 150px;
+}
+
+.usernameDivgauche {
+    color: white;
+}
+
+/* Div centrale */
 
 .divcentral{
     width:45%;
     /* border:black 2px solid; */
     height:100vh;
-    background-color: black;
+    background-color: rgb(33, 33, 33);
     color:white
 }
 
-.buttonTweet{
-    width:200px;
+/* Div du haut */
+.divHaute {
+ border: rgb(60, 60, 60) solid 1px;
+ padding: 10px;
+ font-size: 10px;
+}
+.inputTweet{
+    width:100%;
     height :40px;
-    border-radius: 20px;
+    color:white;
+background-color: rgb(33, 33, 33);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color:rgb(60, 60, 60) 2px solid;;
+}
 
+.buttonTweet{
+    font-size: large;
+    background-color: rgba(174, 76, 0, 0.892);
+    color: white;
+    border-radius: 40px;
+    border-color: rgba(174, 76, 0, 0.892);
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+.buttonTweet:hover {
+background-color: white;
+color: rgba(174, 76, 0, 0.892);
 }
 
 .inputButton{
@@ -33,28 +90,29 @@ background-color: black;
     justify-content: space-between;
 } 
 
-.inputTweet{
-    width:100%;
-    height :40px;
-    color:white;
-    background-color: black;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-left-color: transparent;
 
-    border-bottom-color:rgb(60, 60, 60) 2px solid;;
+
+/* Div du bas */
+.tweetContainer {
+    overflow: hidden;
 }
 
-.hashtagContainer{
-    height:100vh;
-    background-color: black;
 
-}
+/* Div droite */
 
 .trend{
     color:white;
-    background-color: black;
+    background-color: rgb(33, 33, 33);
     width:30%;
+    height:100vh;
     border-left:rgb(60, 60, 60) 2px solid;
+    font-size: 10px;
+    padding: 10px;
+}
+
+.hashtagContainer{
+    height:80%;
+    background-color: rgb(33, 33, 33);
+
 }
 

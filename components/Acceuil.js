@@ -59,7 +59,7 @@ function Acceuils() {
 	return (
 		<div className={styles.boby}>
 			<div className={styles.bgImage}>
-				<img src="/favicon.ico" alt="image de fond ciel" className={styles.piupiu} />
+				<img src="/fabio.png" alt="image de fond ciel" className={styles.piupiu} />
 			</div>
 
 			<div className={styles.bgRight}>

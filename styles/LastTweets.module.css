@@ -1,0 +1,14 @@
+.divtotale {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom:rgb(60, 60, 60) 2px solid;
+}
+.logoDivgauche {
+    width: 50px;
+}
+.userPost {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}

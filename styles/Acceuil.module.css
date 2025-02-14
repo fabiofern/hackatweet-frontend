@@ -22,11 +22,17 @@
   justify-content: center;
   align-items: center;
 }
-
+/* logo de gauche */
 .piupiu {
   position:absolute;
+  width: 50px; 
 }
 
+.piupiu:hover {
+  transform: rotate(720deg) scale(1.5); /* 2 tours = 720 degrés */
+  transition: transform 1.5s ease-in-out; /* Animation fluide */
+  width: 350px;
+}
 .imageIndex {
   height: 100%;
 }
